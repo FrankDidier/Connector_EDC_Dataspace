@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+  },
+  "@id": "policy-time",
+  "policy": {
+    "@context": "http://www.w3.org/ns/odrl.jsonld",
+    "@type": "odrl:Set",
+    "odrl:permission": {
+      "odrl:action": {
+        "odrl:type": "use"
+      },
+      "odrl:constraint": {
+        "odrl:leftOperand": "POLICY_EVALUATION_TIME",
+        "odrl:operator": {
+          "@id": "odrl:lt"
+        },
+        "odrl:rightOperand": "2022-05-31T22:00:00.000000Z"
+      }
+    },
+    "odrl:prohibition": [],
+    "odrl:obligation": []
+  }
+}

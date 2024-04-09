@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+  },
+  "@type": "https://w3id.org/edc/v0.0.1/ns/ContractRequest",
+  "counterPartyAddress": "http://localhost:18182/protocol",
+  "providerId": "provider",
+  "protocol": "dataspace-protocol-http",
+  "policy": {
+    "@context": "http://www.w3.org/ns/odrl.jsonld",
+    "@id": "Y29udHJhY3QtZGVmaW5pdGlvbg==:a2Fma2Etc3RyZWFtLWFzc2V0:ZWNlZmE4MTctZDRkNy00MDhkLWIzOTYtMWY3YmU5NTA4NmQx",
+    "@type": "odrl:Set",
+    "odrl:permission": [
+      {
+        "odrl:target": "kafka-stream-asset",
+        "odrl:action": {
+          "odrl:type": "use"
+        },
+        "odrl:constraint": {
+          "odrl:leftOperand": "POLICY_EVALUATION_TIME",
+          "odrl:operator": {
+            "@id": "odrl:lt"
+          },
+          "odrl:rightOperand": "2022-05-31T22:00:00.000000Z"
+          }
+      }
+    ],
+    "odrl:prohibition": [],
+    "odrl:obligation": [],
+    "odrl:target": {
+      "@id": "kafka-stream-asset"
+    }
+  }
+}
